@@ -271,6 +271,13 @@
                     </includes>
                   </relocation>
                   <relocation>
+                    <pattern>com.apache</pattern>
+                    <shadedPattern>org.apache.spark.sql.kinesis.shaded.apache</shadedPattern>
+                    <includes>
+                      <include>com.apache.**</include>
+                    </includes>
+                  </relocation>
+                  <relocation>
                     <pattern>com.google.protobuf</pattern>
                     <shadedPattern>org.apache.spark.sql.kinesis.shaded.google.protobuf</shadedPattern>
                     <includes>
